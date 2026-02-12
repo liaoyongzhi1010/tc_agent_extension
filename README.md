@@ -19,8 +19,12 @@ npm run compile
 
 ## 后端地址配置
 
-方式 A：打开 VS Code 设置（`Ctrl+,`）→ 搜索 `TC Agent Backend Url` → 填写后端地址。  
-方式 B：打开“设置 (JSON)”并添加以下配置：
+1.打开 VS Code,按Ctrl+Shift+P(Windows/Linux)或Cmd+Shift+P(苹果)，打开命令面板。
+2.在命令面板的输入框里，直接 打开输入设置(JSON)
+3.在下拉列表中，选择首选项:打开用户设置(JSON)这一项，回车即可打开settings.json文件。
+
+<img width="1190" height="798" alt="ed22097bcd41d72422a1fa2ba02c5317" src="https://github.com/user-attachments/assets/1997313d-e874-4b92-a4b0-6fe8525158e5" />
+4.把"tcAgent.backendUrl":"http://43.137.51.37:6101”这一行添加进去，保存文件就完成配置了。
 
 ```json
 {
