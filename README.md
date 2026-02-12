@@ -19,13 +19,22 @@ npm run compile
 
 ## 后端地址配置
 
-在 VS Code 设置中填写：
+方式 A：打开 VS Code 设置（`Ctrl+,`）→ 搜索 `TC Agent Backend Url` → 填写后端地址。  
+方式 B：打开“设置 (JSON)”并添加以下配置：
 
 ```json
 {
   "tcAgent.backendUrl": "http://43.137.51.37:6101"
 }
 ```
+
+> 如果后端在本机，填写 `http://127.0.0.1:8765`。修改后建议执行一次 **Reload Window**。
+
+## Ask 与 Agent 如何选择
+
+- **Ask**：概念解释、接口用法、快速问答、只需要答案不改代码  
+- **Agent**：需要生成/修改代码、运行工具/编译/执行、跨多步落地任务  
+- 不确定时先用 Ask，若需要“产出代码或执行任务”再切 Agent
 
 ## 说明
 
